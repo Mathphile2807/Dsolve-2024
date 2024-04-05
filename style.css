@@ -75,3 +75,24 @@ img{
     position: absolute;
     color: #f0f8ff;
 }
+
+#imageContainer{
+    position: relative;
+}
+
+#location_marker{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: green;
+    width: min-content;
+
+    
+}
+
+#floor_marker{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: green;
+}
