@@ -11,7 +11,7 @@
     <div id="container">
         <form id="mainForm">
             <label for="floor">Select Floor:</label>
-            <select id="floor" name="floor">
+            <select id="floor" name="floor" class="box">
                 <option value="first">First</option>
                 <option value="second">Second</option>
                 <option value="third">Third</option>
@@ -19,18 +19,20 @@
         </form>
         <form id="loc" style="display:none;">
             <label for="location">Select Location:</label>
-            <select id="location" name="location">
+            <select id="location" name="location" class="box">
             </select>
         </form>
         <form id="dest" style="display:none;">
             <label for="destination">Select Destination:</label>
-            <select id="destination" name="destination">
+            <select id="destination" name="destination" class="box">
             </select>
         </form>
-        <button id="submitBtn">Submit</button>
-        <div id="imageContainer" style="display:none;">
-            <img id="floorImage" src="" alt="Floor Image">
-        </div>
+        <button id="submitBtn" >Submit</button>
+    </div>
+    <div id="imageContainer" style="display:none;">
+        <div id="location">location</div>
+        <div id="floor">floor</div>
+        <img id="floorImage" src="" alt="Floor Image">
     </div>
 <script src="script.js"></script>   
 </body>

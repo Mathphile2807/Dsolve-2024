@@ -6,17 +6,32 @@
     box-sizing: border-box;
 }
 body{
+    background-color: #5E3023;
     min-height: 100vh;
-    background-image: url(image/pexels-kseniya-kopna-18795083.jpg);
     margin: 1em;
     font-family: roboto;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 select,option,button {
     font: inherit;
+    background-color: #C08552;
+    color: #F3E9DC;
+    transition: .5s;
+}
+
+select:hover{
+    background-color: #f0f8ff;
+    color: #5E3023;
+}
+
+button:hover{
+    background-color: #f0f8ff;
+    color: #5E3023;
+    transform: scale(1.1);
 }
 
 form{
@@ -31,30 +46,32 @@ form{
 
 #container{
     padding: 20px;
-    padding-top: 100px;
-    max-height: 50vh;
+    min-height: 50vh;
     max-width: 500px;
     border: 1px solid hsl(0, 0%, 0%);
     border-radius: 30px;
-    background-color: hsla(180, 100%, 97%, 0.191);
+    background-color: #DAB49D;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 175px   ;
 }
 
-#submit{
+#submitBtn{
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 label{
-    color: aliceblue;
+    color: #5E3023;
 }
 
-#imageContainer{
-    padding-top: 120px;
-    padding-right: 300px;
-    height: 200px;
-    width: 200px;
+img{
+    min-height: 100vh;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.location{
+    position: absolute;
+    color: #f0f8ff;
 }
