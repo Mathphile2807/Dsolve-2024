@@ -34,6 +34,9 @@ function populateAllFloors() {
     document.getElementById('dest').style.display = 'block';
 }
 
+let currentLocationValue = '';
+let destinationLocationValue = '';
+
 function submitForm() {
     const currentLocation = document.getElementById('location').value;
     const destinationLocation = document.getElementById('destination').value;
@@ -43,17 +46,17 @@ function submitForm() {
 }
 
 function displayFloorImage(destinationLocation) {
-    const firstDigit = parseInt(destinationLocation[0]);
+    const firstDigit = parseInt(destinationLocation[2]);
     let imageUrl = '';
     switch (firstDigit) {
         case 1:
-            imageUrl = 'image/Untitled-1.png';
+            imageUrl = 'image/floor1.jpg';
             break;
         case 2:
-            imageUrl = 'image/Untitled-1.png'; 
+            imageUrl = 'image/floor2.jpg'; 
             break;
         default:
-            imageUrl = 'image/Untitled-1.png'; 
+            imageUrl = 'image/floor3.jpg'; 
             break;
     }
     const imageContainer = document.getElementById('imageContainer');

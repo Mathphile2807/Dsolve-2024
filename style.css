@@ -92,15 +92,15 @@ img{
     
 
     
-}
+} */
 
 #floor_marker{
     top: 80px;
-    left: 68px;
+    left: 90px;
     font-size: 2rem;
     position: absolute;
     height: 30px;
     width: 30px;
     border-radius: 20px;
     background-color: #006494;
-} */
+}
