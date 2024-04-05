@@ -2,7 +2,7 @@ const options = {
     first: ["CS101","CS102","CS103","CS104","CS105","CS106","CS107","CS108","CS109","CS110","CS111","CS112","CS113","CS114","CS115","CS116","CS117","CS118"],
     second: ["CS201","CS202","CS203","CS204","CS205","CS206","CS207","CS208","CS209","CS210","CS211","CS212","CS213","CS214","CS215","CS216","CS217","CS218"],
     third: ["CS301","CS302","CS303","CS304","CS305","CS306","CS307","CS308","CS309","CS310","CS311","CS312","CS313","CS314","CS315","CS316","CS317","CS318"]
-};
+};  
 
 function populateSubForm(subFormId) {
     const floor = document.getElementById('floor').value;
@@ -34,8 +34,41 @@ function populateAllFloors() {
     document.getElementById('dest').style.display = 'block';
 }
 
+function submitForm() {
+    const currentLocation = document.getElementById('location').value;
+    const destinationLocation = document.getElementById('destination').value;
+    console.log('Current Location:', currentLocation);
+    console.log('Destination Location:', destinationLocation);
+    displayFloorImage(destinationLocation);
+}
+
+function displayFloorImage(destinationLocation) {
+    const firstDigit = parseInt(destinationLocation[0]);
+    let imageUrl = '';
+    switch (firstDigit) {
+        case 1:
+            imageUrl = 'image/Untitled-1.png';
+            break;
+        case 2:
+            imageUrl = 'image/Untitled-1.png'; 
+            break;
+        default:
+            imageUrl = 'image/Untitled-1.png'; 
+            break;
+    }
+    const imageContainer = document.getElementById('imageContainer');
+    const floorImage = document.getElementById('floorImage');
+    floorImage.src = imageUrl;
+    imageContainer.style.display = 'block';
+    floorImage.style.height="300px";width ="500px";
+}
+
 document.getElementById('floor').addEventListener('change', function() {
     populateSubForm('loc');
+});
+
+document.getElementById('submitBtn').addEventListener('click', function() {
+    submitForm();
 });
 
 populateSubForm('loc');
