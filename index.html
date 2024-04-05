@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navi</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<div id="container">
+    <form id="mainForm">
+        <label for="floor">Select Current Floor:</label>
+        <select id="floor" name="floor">
+            <option value="first">First</option>
+            <option value="second">Second</option>
+            <option value="third">Third</option>
+        </select>
+    </form>
+    <form id="loc" style="display:none;">
+        <label for="location">Select Current Location:</label>
+        <select id="location" name="location">
+
+        </select>
+    </form>
+    <form id="dest" style="display:none;">
+        <label for="destination">Select Destination:</label>
+        <select id="destination" name="destination">
+
+        </select>
+    </form>
+</div>
+<script src="script.js"></script>   
+</body>
+</html>
