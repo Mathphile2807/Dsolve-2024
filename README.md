@@ -4,15 +4,14 @@
 
 
 ## Team Name
-Name  
+Theeporii 
 
 # Team Member
-Member 1 Github Link
-
-MEmber 2 Github Link
+Achyuth A https://github.com/Traxx11
+Bhagyanath M U https://github.com/Mathphile2807
 
 ## Idea
-Breif Idea in two three sentences 
+The hackathon project focuses on developing a website designed specifically for students navigating within a Computer Science department. Implemented with HTML, CSS, and JavaScript, the website utilizes floor plans to streamline navigation. It includes features like displaying current locations, offering directional guidance to desired rooms, and identifying room types (e.g., classroom, lab, staff room). Additionally, the website assists students in locating specific classrooms, labs, and staff rooms associated with their teachers. This comprehensive solution greatly improves students' ability to efficiently navigate the department's premises and access necessary resources. 
 
 ## Features 
 1. 
